@@ -203,7 +203,7 @@ public class TileIndicator : MonoBehaviour
         {
             GameObject srcTile = OnGoingProperties.selectedObject;
             TileIndicator tileIndicator = srcTile.GetComponent<TileIndicator>();
-            if (switchToMoveTile)
+            if (switchToMoveTile && gameObjectInMap == null)
             {
                 ArrayList moveTiles = OnGoingProperties.selectedMoveTiles;
                 if (moveTiles != null)
@@ -213,7 +213,6 @@ public class TileIndicator : MonoBehaviour
             }
             else
             {
-                gameObject.GetComponent<TileIndicator>().gameObjectInMap = tileIndicator.gameObjectInMap;
                 tileIndicator.gameObjectInMap.ChangeState(0);
             }
             showMovementTile(tileIndicator.gameObjectInMap.gameObjectStats.movement, tileIndicator.tileX, tileIndicator.tileY, false);

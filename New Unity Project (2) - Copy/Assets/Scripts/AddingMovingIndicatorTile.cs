@@ -29,6 +29,10 @@ public class AddingMovingIndicatorTile : MonoBehaviour
         Instantiate(Resources.Load("Cat")
                    , new Vector3((float)(5 * Constant.tileSize + Constant.tileOffSetX)
                    , (float)(4 * Constant.tileSize + Constant.tileOffSetY), 0), Quaternion.identity);
+
+        Instantiate(Resources.Load("Cat")
+                   , new Vector3((float)(3 * Constant.tileSize + Constant.tileOffSetX)
+                   , (float)(4 * Constant.tileSize + Constant.tileOffSetY), 0), Quaternion.identity);
     }
 
     // Update is called once per frame

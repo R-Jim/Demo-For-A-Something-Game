@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MovingByMouseClick : MonoBehaviour {
 
-    bool isClicked = false;
     Animator animator;
     public GameObjectStats gameObjectStats { get; set; }
 
@@ -32,18 +31,6 @@ public class MovingByMouseClick : MonoBehaviour {
             }
         }
     }
-
-
-    //private void OnMouseUp()
-    //{
-    //    Debug.Log("Running");
-    //    isClicked = true;
-    //    animator.SetInteger("Stage", 1);
-    //    TileMovementIndicator.objectSelected = true;
-    //    TileMovementIndicator.lastIndicatorPos = transform.position;
-    //    TileMovementIndicator.gameObjectPos = transform.position;
-    //}
-
 
     public void ChangeState(int state)
     {
